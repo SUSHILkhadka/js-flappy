@@ -1,0 +1,40 @@
+*{
+    color: white;
+    font-size: 30px;
+}
+.gamewindow1{
+    margin: 0rem auto;
+    width: 80%;
+    height: 500px;
+    background-image: url('../assets/background-night.png');
+    position: relative;
+    overflow-x: clip;
+    display: hidden;
+}
+.startscreen{
+    display: flex;
+    margin: 0rem auto;
+    width: 100%;
+    height: 500px;
+    background-image: url('../assets/background-night.png');
+    position: relative;
+    overflow-x: clip;
+    justify-content: center;
+    align-items: center;
+}
+.gameoverscreen{
+    display: none;
+}
+
+
+@keyframes carMove
+{
+    0%{
+        background-position: 1px 0;
+
+    }
+    100%{
+        background-position: -1000px 0;
+
+    }
+}
