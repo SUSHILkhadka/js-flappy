@@ -11,9 +11,6 @@ startscreen.addEventListener('click', event => {
     gamewindow1.style.display = 'none';
     speedOfObstacle = 10;
     var status = start();
-    console.log('after reset==================================================================================');
-
-    console.log('gameoverflag is', status);
 })
 
 function start() {
@@ -59,7 +56,6 @@ function start() {
     scorediv.style.zIndex = '3';
     gamewindow.append(scorediv)
     let gameoverFlag = false;
-    // let v=false;
     function play() {
         if (gameoverFlag == false) {
 
@@ -90,6 +86,7 @@ function start() {
                 bird.top = bottomHeightForObstacle - heightOfBird;
                 bird.deadFrame();
             }
+
             startscreen.style.display = 'block';
             startscreen.innerHTML='Press to restart'
             gamewindow1.style.display = 'block';
